@@ -4,10 +4,10 @@
 const GAS_WEB_APP_URL = "ここにGASのWebアプリURLを貼り付ける";
 
 const RESULT_CHARACTER_IMAGES = {
-explorer: "images/result_explorer.png",
-craftsman: "images/result_craftsman.png",
-supporter: "images/result_supporter.png",
-guardian: "images/result_guardian.png"
+explorer: "result_explorer.png",
+craftsman: "result_craftsman.png",
+supporter: "result_supporter.png",
+guardian: "result_guardian.png"
 };
 
 const state = {
@@ -197,7 +197,7 @@ result_data: resultData
 
 function judgeResultType(axis1Score, axis2Score) {
 if (axis1Score >= 50 && axis2Score >= 50) {
-return "pioneer";
+return "explorer";
 }
 
 if (axis1Score >= 50 && axis2Score < 50) {
@@ -450,10 +450,10 @@ return params.get("dev") === "result";
 
 function showDevResult() {
 const params = new URLSearchParams(window.location.search);
-const type = params.get("type") || "pioneer";
+const type = params.get("type") || "explorer";
 
-const allowedTypes = ["pioneer", "craftsman", "supporter", "guardian"];
-const resultKey = allowedTypes.includes(type) ? type : "pioneer";
+const allowedTypes = ["explorer", "craftsman", "supporter", "guardian"];
+const resultKey = allowedTypes.includes(type) ? type : "explorer";
 
 const resultData = RESULTS[resultKey];
 
