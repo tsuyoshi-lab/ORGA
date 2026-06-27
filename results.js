@@ -1,7 +1,7 @@
 // results.js 
 // ORGA(β版) 診断結果データ 
 const RESULTS = { 
-pioneer: { 
+explorer: { 
 typeName: "開拓者タイプ", 
 catchCopy: "変化を恐れず、仲間と未来を切り拓く人", 
 description: 
