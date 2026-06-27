@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ORGA β版｜組織適応力診断</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="app-container">
+
+<!-- U01 トップページ -->
+<section id="screen-u01" class="screen active">
+<div class="card hero-card">
+<p class="eyebrow">組織適応力診断</p>
+<h1>ORGA</h1>
+<p class="main-copy">
+あなたは<br />
+「開拓者」「職人」「支援者」「守護者」<br />
+どのタイプ？
+</p>
+<p class="sub-copy">16問・約3分</p>
+<button id="start-button" class="primary-button">
+診断スタート
+</button>
+</div>
+</section>
+
+<!-- U02 診断説明画面 -->
+<section id="screen-u02" class="screen">
+<div class="card">
+<h2>診断について</h2>
+<p>
+ORGAは、仕事や組織の中での行動傾向を分析する診断です。
+</p>
+<p>
+性格の良し悪しや能力の優劣を判定するものではありません。
+気軽に直感で回答してください。
+</p>
+
+<div class="info-box">
+<h3>診断概要</h3>
+<ul>
+<li>質問数：16問</li>
+<li>所要時間：約3分</li>
+<li>結果：4タイプ診断</li>
+</ul>
+</div>
+
+<div class="info-box">
+<h3>注意事項</h3>
+<ul>
+<li>正解・不正解はありません</li>
+<li>考え込みすぎず回答してください</li>
+<li>診断結果は行動傾向を示す参考情報です</li>
+</ul>
+</div>
+
+<div class="info-box privacy-box">
+<h3>個人情報について</h3>
+<p>
+この診断では、氏名、メールアドレス、電話番号、住所、勤務先企業名など、
+個人を特定できる情報は取得しません。
+</p>
+<p>
+取得する情報は、診断回答、診断結果、アンケート回答、年齢層、
+勤務先規模、職種、転職意向のみです。
+</p>
+</div>
+
+<button id="begin-button" class="primary-button">
+診断を開始する
+</button>
+</div>
+</section>
+
+<!-- U03 質問画面 -->
+<section id="screen-u03" class="screen">
+<div class="card">
+<div class="question-header">
+<p id="question-number" class="question-number">Q1 / 16</p>
+<p id="progress-text" class="progress-text">0%</p>
+</div>
+
+<div class="progress-track">
+<div id="progress-bar" class="progress-bar"></div>
+</div>
+
+<h2 id="question-text" class="question-text">
+質問文がここに入ります
+</h2>
+
+<div id="options-container" class="options-container">
+<!-- JavaScriptで選択肢を表示 -->
+</div>
+
+<button id="next-question-button" class="primary-button" disabled>
+次へ
+</button>
+</div>
+</section>
+
+<!-- U04 診断処理画面 -->
+<section id="screen-u04" class="screen">
+<div class="card loading-card">
+<div class="loader"></div>
+<h2>診断結果を作成しています</h2>
+<p>あなたの回答傾向を分析中です。</p>
+</div>
+</section>
+
+<!-- U05 結果表示画面 -->
+<section id="screen-u05" class="screen">
+<div class="card result-card">
+<p class="eyebrow">あなたの組織適応タイプは</p>
+
+<h2 id="result-type" class="result-type">
+○○タイプ
+</h2>
+
+<p id="total-score" class="total-score">
+総合適応指数：〇〇点
+</p>
+
+<p id="result-catch-copy" class="catch-copy">
+キャッチコピーがここに入ります
+</p>
+
+<p id="result-description" class="result-description">
+説明文がここに入ります
+</p>
+
+<div class="result-section">
+<h3>長所</h3>
+<ul id="result-strengths"></ul>
+</div>
+
+<div class="result-section">
+<h3>注意点</h3>
+<ul id="result-cautions"></ul>
+</div>
+
+<p class="note-text">
+※β版では軸別得点は表示しません。
+</p>
+
+<button id="to-about-button" class="primary-button">
+ORGAについて詳しく見る
+</button>
+</div>
+</section>
+
+<!-- U06 ORGA解説画面 -->
+<section id="screen-u06" class="screen">
+<div class="card">
+<h2>ORGAとは</h2>
+
+<p>
+ORGAは、性格の良し悪しを判定する診断ではありません。
+</p>
+
+<p>
+組織の中で、どのような行動を取りやすいかを可視化するための診断です。
+</p>
+
+<p>
+今回のβ版では、「問題への向き合い方」と「周囲との関わり方」をもとに、
+4つのタイプへ分類しています。
+</p>
+
+<div class="info-box">
+<h3>診断結果の見方</h3>
+<p>
+診断結果は、能力の優劣を示すものではありません。
+</p>
+<p>
+自分が組織の中で取りやすい行動傾向を知り、
+今後の働き方や改善のヒントにするためのものです。
+</p>
+</div>
+
+<div class="info-box">
+<h3>β版について</h3>
+<p>
+現在のORGAはβ版です。
+</p>
+<p>
+今後、回答データやアンケート結果をもとに、
+診断内容や結果表示を改善していきます。
+</p>
+</div>
+
+<button id="to-survey-button" class="primary-button">
+アンケートに協力する
+</button>
+</div>
+</section>
+
+<!-- U07 アンケート画面 -->
+<section id="screen-u07" class="screen">
+<div class="card">
+<h2>アンケートにご協力ください</h2>
+
+<p>
+今後の診断精度向上のため、簡単なアンケートへのご協力をお願いいたします。
+回答時間は1分程度です。
+</p>
+
+<form id="survey-form" class="survey-form">
+
+<fieldset>
+<legend>診断結果は自分に当てはまっていると思いますか？</legend>
+<label><input type="radio" name="result_match" value="5" /> 5：とても当てはまる</label>
+<label><input type="radio" name="result_match" value="4" /> 4：当てはまる</label>
+<label><input type="radio" name="result_match" value="3" /> 3：やや当てはまる</label>
+<label><input type="radio" name="result_match" value="2" /> 2：どちらともいえない</label>
+<label><input type="radio" name="result_match" value="1" /> 1：あまり当てはまらない</label>
+<label><input type="radio" name="result_match" value="0" /> 0：全く当てはまらない</label>
+</fieldset>
+
+<fieldset>
+<legend>この診断を友人や同僚に勧めたいと思いますか？</legend>
+<label><input type="radio" name="recommend_level" value="5" /> 5：とても勧めたい</label>
+<label><input type="radio" name="recommend_level" value="4" /> 4：勧めたい</label>
+<label><input type="radio" name="recommend_level" value="3" /> 3：やや勧めたい</label>
+<label><input type="radio" name="recommend_level" value="2" /> 2：どちらともいえない</label>
+<label><input type="radio" name="recommend_level" value="1" /> 1：あまり勧めたくない</label>
+<label><input type="radio" name="recommend_level" value="0" /> 0：勧めたくない</label>
+</fieldset>
+
+<fieldset>
+<legend>年齢層を教えてください</legend>
+<label><input type="radio" name="age_group" value="20代以下" /> 20代以下</label>
+<label><input type="radio" name="age_group" value="30代" /> 30代</label>
+<label><input type="radio" name="age_group" value="40代" /> 40代</label>
+<label><input type="radio" name="age_group" value="50代" /> 50代</label>
+<label><input type="radio" name="age_group" value="60代以上" /> 60代以上</label>
+</fieldset>
+
+<fieldset>
+<legend>勤務先の企業規模を教えてください</legend>
+<label><input type="radio" name="company_size" value="大手企業" /> 大手企業</label>
+<label><input type="radio" name="company_size" value="中堅企業" /> 中堅企業</label>
+<label><input type="radio" name="company_size" value="中小企業" /> 中小企業</label>
+<label><input type="radio" name="company_size" value="その他" /> その他</label>
+</fieldset>
+
+<fieldset>
+<legend>職種を教えてください</legend>
+<label><input type="radio" name="job_type" value="技術職" /> 技術職</label>
+<label><input type="radio" name="job_type" value="事務職" /> 事務職</label>
+<label><input type="radio" name="job_type" value="営業職" /> 営業職</label>
+<label><input type="radio" name="job_type" value="企画職" /> 企画職</label>
+<label><input type="radio" name="job_type" value="管理職" /> 管理職</label>
+<label><input type="radio" name="job_type" value="その他" /> その他</label>
+</fieldset>
+
+<fieldset>
+<legend>現在、転職を検討していますか？</legend>
+<label><input type="radio" name="career_change_intent" value="積極的に検討している" /> 積極的に検討している</label>
+<label><input type="radio" name="career_change_intent" value="少し検討している" /> 少し検討している</label>
+<label><input type="radio" name="career_change_intent" value="検討していない" /> 検討していない</label>
+</fieldset>
+
+</form>
+
+<button id="survey-submit-button" class="primary-button">
+アンケートを送信する
+</button>
+</div>
+</section>
+
+<!-- U08 完了画面 -->
+<section id="screen-u08" class="screen">
+<div class="card complete-card">
+<h2>診断完了</h2>
+
+<p>
+ORGAβ版をご利用いただき、ありがとうございました。
+</p>
+
+<p>
+いただいた回答は、今後の診断精度向上や正式版開発の参考にさせていただきます。
+</p>
+
+<p>
+ORGAは今後、より詳しい診断結果や改善ヒントを表示できるように改善していく予定です。
+</p>
+
+<button id="back-to-top-button" class="secondary-button">
+トップページへ戻る
+</button>
+
+<footer class="designer-footer">
+<div class="footer-line"></div>
+<p>ORGA β版</p>
+<p>設計・運営</p>
+<div class="designer-profile">
+<div class="designer-icon">X</div>
+<div>
+<p class="designer-name">○○（Xアカウント名）</p>
+<p class="designer-handle">@XXXXXXXX</p>
+</div>
+</div>
+</footer>
+</div>
+</section>
+
+</main>
+
+<script src="questions.js"></script>
+<script src="results.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
