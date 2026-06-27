@@ -281,10 +281,6 @@ display: block;
 margin: 0 auto;
 }
 
-.result-character-image[src=""] {
-display: none;
-}
-
 .total-score {
 display: inline-block;
 margin: 0 0 18px;
