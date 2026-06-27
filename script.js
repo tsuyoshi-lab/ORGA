@@ -4,10 +4,10 @@
 const GAS_WEB_APP_URL = "ここにGASのWebアプリURLを貼り付ける";
 
 const RESULT_CHARACTER_IMAGES = {
-explorer: "result_explorer.png",
-craftsman: "result_craftsman.png",
-supporter: "result_supporter.png",
-guardian: "result_guardian.png"
+explorer: "images/result_explorer.png",
+craftsman: "images/result_craftsman.png",
+supporter: "images/result_supporter.png",
+guardian: "images/result_guardian.png"
 };
 
 const state = {
