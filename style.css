@@ -438,7 +438,8 @@ font-size: 1.15rem;
 }
 
 .top-character-image {
-max-width: 220px;
+width: 80%;
+max-width: none;
 }
 
 .result-character-image {
