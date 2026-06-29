@@ -216,7 +216,8 @@ const result = state.diagnosisResult;
 const resultData = result.result_data;
 
 document.getElementById("result-type").textContent = resultData.typeName;
-document.getElementById("total-score").textContent = `総合適応指数：${result.total_score}点`;
+const displayScore = Math.max(result.total_score, 50);
+document.getElementById("total-score").textContent = `総合適応指数：${displayScore}点`;
 document.getElementById("result-catch-copy").textContent = resultData.catchCopy;
 document.getElementById("result-description").textContent = resultData.description;
 
