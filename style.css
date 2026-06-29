@@ -387,18 +387,9 @@ color: #ffffff;
 font-weight: 700;
 }
 
-.designer-name,
 .designer-handle {
 margin: 0;
 text-align: left;
-}
-
-.designer-name {
-font-weight: 700;
-color: #1f2933;
-}
-
-.designer-handle {
 color: #6b7785;
 }
 
