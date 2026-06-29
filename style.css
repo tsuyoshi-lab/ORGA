@@ -274,8 +274,8 @@ text-align: center;
 }
 
 .result-character-image {
-width: 100%;
-max-width: 240px;
+width: 95%;
+max-width: none;
 height: auto;
 display: block;
 margin: 0 auto;
@@ -443,7 +443,8 @@ max-width: none;
 }
 
 .result-character-image {
-max-width: 210px;
+    width: 95%;
+    max-width: none;
 }
 
 .primary-button,
