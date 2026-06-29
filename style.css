@@ -113,8 +113,8 @@ text-align: center;
 }
 
 .top-character-image {
-width: 100%;
-max-width: 260px;
+width: 80%;
+max-width: none;
 height: auto;
 display: block;
 margin: 0 auto;
